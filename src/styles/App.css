@@ -1,0 +1,33 @@
+body {
+	background: url(../sean-lim-NPlv2pkYoUA-unsplash.jpg) no-repeat center
+		center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	overflow-x: hidden;
+	font-family: "GoldleafBoldPersonal", sans-serif;
+}
+@font-face {
+	font-family: "GoldleafBoldPersonal";
+	src: url("../assets/fonts/GoldleafBoldPersonalUseBold-eZ4dO.ttf");
+	src: local("GoldleafBoldPersonal"),
+		url("../assets/fonts/GoldleafBoldPersonalUseBold-eZ4dO.ttf")
+			format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+::-webkit-scrollbar {
+	width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	border-radius: 4px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #6c757d;
+	border-radius: 10px;
+}
