@@ -91,7 +91,8 @@ const Intro = (props) => {
 						{isUpSm && (
 							<Fade in={show} timeout={2000}>
 								<div className={classes.txt}>
-My Bio
+								Currently, I work in the Adl lab as a researcher. My primary focus is on artificial intelligence, and I enjoy using my skills to contribute to the exciting technological advances that happen every day.
+My research interests are computer vision and reinforcement learning. In Adl, I had a chance to work on computer vision projects involving object detection, semantic segmentation, and unsupervised learning. This was a great opportunity to deepen my understanding of this area of AI research. Additionally, working with Virageek and associations has allowed me to share my passion for teamwork and AI with others and help them develop their skills.
 								</div>
 							</Fade>
 						)}

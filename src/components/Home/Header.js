@@ -67,9 +67,9 @@ const Header = () => {
 					<Typed strings={["Sobhan Shukueian"]} typeSpeed={40} />
 				</Typography>
 				<Typography className={classes.subtitle} variant="h5">
-					BS.C. Computer Engineering
+					BS.C. Computer Engineering in Tabriz University (GPA: 17.48/20 (3.71/4))
 					<br />
-					Ai Researcher <br />
+					Researcher <br />
 					<Typed
 						strings={["Computer Vision", "Reinforcement Learning"]}
 						typeSpeed={40}

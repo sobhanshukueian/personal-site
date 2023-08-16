@@ -27,8 +27,8 @@ const Resume = [
 	{
 		year: "2021",
 		title: "AI Researcher",
-		desc: "In 2021 I've known about the APA lab and started working in this lab as a researcher and worked on one of the most significant projects I've worked on and had the chance to work with Iran's National Elites Foundation.",
-		subTitle: "APA Lab",
+		desc: "In 2021 I've known about the ADL lab and started working in this lab as a researcher and worked on one of the most significant projects I've worked on and had the chance to work with Iran's National Elites Foundation.",
+		subTitle: "ADL (Applied Deep Learning) Lab",
 	},
 	{
 		year: "2021",

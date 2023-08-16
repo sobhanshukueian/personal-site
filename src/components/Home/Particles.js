@@ -18,11 +18,11 @@ const Particles = () => {
       params={{
         particles: {
           number: {
-            value: 45,
-            density: {
-              enable: true,
-              value_area: 800,
-            },
+            value: 90,
+            // density: {
+            //   enable: true,
+            //   value_area: 800,
+            // },
           },
           shape: {
             type: "circle",

@@ -11,6 +11,8 @@ import unet from "../images/unet.png";
 import denoising from "../images/denoising.png";
 import ml from "../images/ml.jfif";
 import att from "../images/att.png";
+import vae from "../images/vae.png";
+
 
 
 
@@ -38,6 +40,12 @@ const projects = [
 		description: `Face identification is the task of matching a given face image to one in an existing database of faces.So how can we solve this problem with siamese networks?`,
 		image: att,
 		link: "https://github.com/sobhanshukueian/Face-Identification-using-Siamese",
+	},
+	{
+		name: "VAE",
+		description: `A variational autoencoder can be defined as an autoencoder whose training is regularized to avoid overfitting and ensure that the latent space has good properties that enable a generative process. We proceed to modify the encoding-decoding process slightly: **instead of encoding an input as a single point, we encode it as a distribution over the latent space.`,
+		image: vae,
+		link: "https://github.com/sobhanshukueian/Variational-Auto-Encoder",
 	},
 	{
 		name: "FCN Semantic Segmentation",

@@ -2,12 +2,16 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
+import Particles from "../Home/Particles";
 
 import resume from "../../constants/Resume";
 
 const useStyles = makeStyles((theme) => ({
 	mainContainer: {
 		background: "#212529",
+		backdropFilter: "blur(10px)",
+		position: "relative",
+		// height: "100vh",
 	},
 	timeLine: {
 		position: "relative",
@@ -100,25 +104,36 @@ const useStyles = makeStyles((theme) => ({
 		padding: "3rem 0",
 		textTransform: "uppercase",
 		fontSize: theme.typography.pxToRem(40),
+		fontFamily: "Sans",
+
 	},
 	subHeading: {
 		color: "#adb5bd",
 		padding: 0,
 		textTransform: "uppercase",
+		fontFamily: "Sans",
+
 	},
 	body1: {
 		color: "#6c757d",
+		fontFamily: "Sans",
+
 	},
 	subtitle1: {
 		color: "#fee",
-		fontFamily: "initial"
+		fontFamily: "initial",
+		fontFamily: "Sans",
+
 	},
 }));
 
 const Resume = () => {
 	const classes = useStyles();
 	return (
+		<>
 		<Box component="header" className={classes.mainContainer}>
+		<Particles />
+
 			<Typography variant="h4" align="center" className={classes.heading}>
 				Experiences
 			</Typography>
@@ -162,7 +177,9 @@ const Resume = () => {
 					);
 				})}
 			</Box>
+
 		</Box>
+		</>
 	);
 };
 
