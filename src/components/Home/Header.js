@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
 		},
 	},
 	subtitle: {
-		color: "#6C757D",
+		color: "#adb5bd",
 		fontSize: theme.typography.pxToRem(18),
 		marginTop: theme.spacing(2),
 		fontFamily: "sans",
@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
 		zIndex: 1,
 	},
 	icn: {
-		color: "#6C757D",
+		color: "#adb5bd",
 		backgroundColor: "#212529",
 	},
 	contain: {
@@ -69,11 +69,12 @@ const Header = () => {
 				<Typography className={classes.subtitle} variant="h5">
 					BS.C. Computer Engineering in Tabriz University (GPA: 17.48/20 (3.71/4))
 					<br />
-					Researcher <br />
+					<br />
+					{/*Researcher <br /> */}
 					<Typed
-						strings={["Computer Vision", "Reinforcement Learning"]}
-						typeSpeed={40}
-						backSpeed={50}
+						strings={["Machine Learning", "Deep Learning", "Computer Vision", "Reinforcement Learning"]}
+						typeSpeed={10}
+						backSpeed={5}
 						loop
 					/>
 				</Typography>

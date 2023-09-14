@@ -159,10 +159,10 @@ const Navbar = () => {
 									<Mail />
 								</IconButton>
 							</a>
-							<IconButton>
+							{/* <IconButton>
 								<GetAppIcon />
 							</IconButton>
-							<div className={classes.dn}>Downlaod CV</div>
+							<div className={classes.dn}>Downlaod CV</div> */}
 						</Box>
 						<IconButton onClick={() => setOpen(true)}>
 							<MenuIcon className={classes.arrow} />

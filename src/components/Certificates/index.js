@@ -12,11 +12,11 @@ import publications from "../../constants/Publications";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-	background: "#233",
-		// height: "100%",
-		textDecoration: "none",
-		padding: theme.spacing(2),
-		fontFamily: "Sans",
+    background: "#233",
+    // height: "100%",
+    textDecoration: "none",
+    padding: theme.spacing(2),
+    fontFamily: "Sans",
 
   },
   cardContainer: {
@@ -45,17 +45,20 @@ const Certificates = () => {
               <CardActionArea>
                 <CardContent>
                   <Typography variant="subtitle2" className={classes.text}>
-                    {project.date} - {project.status}
+                    {project.status}
                   </Typography>
                   <Typography variant="h2" gutterBottom className={classes.text}>
                     <strong>{project.name}</strong>
                   </Typography>
                   <Typography variant="body1" className={classes.text}>
+                  <strong>Please feel free to contact us if you have any questions regarding publications.</strong>
+                  </Typography>
+                  {/* {/* <Typography variant="body1" className={classes.text}>
                     <strong>Abstract </strong> <br/> {project.abstract}
-                  </Typography>
-                  <Typography variant="body1" className={classes.text}>
+                  </Typography> */}
+                  {/* <Typography variant="body1" className={classes.text}>
                     <strong>Introduction </strong> <br/>  {project.introduction.slice(0, 150)}...
-                  </Typography>
+                  </Typography>  */}
                 </CardContent>
               </CardActionArea>
             </Card>

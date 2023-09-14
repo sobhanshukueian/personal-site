@@ -1,6 +1,6 @@
 import style_transfer from "../images/style transfer.jpg";
 import road from "../images/road.jpg";
-import od from "../images/od.jpg";
+import od from "../images/od.png";
 import fcn from "../images/fcn.png";
 import river from "../images/river.png";
 import gan from "../images/GAN.gif";
@@ -10,8 +10,10 @@ import search from "../images/search.png";
 import unet from "../images/unet.png";
 import denoising from "../images/denoising.png";
 import ml from "../images/ml.jfif";
-import att from "../images/att.png";
+import att from "../images/ceaef42e-f9c4-4d5a-bebb-2a86fccd7827.png";
 import vae from "../images/vae.png";
+import iris from "../images/iris.jpg";
+
 
 
 
@@ -20,12 +22,20 @@ import vae from "../images/vae.png";
 const projects = [
 	{
 		name: "Research on Object detection",
-		description: `This project was about researching and implementing an object detection model with a small size that can run on a mobile processor Under the supervision of Iran's National Elites Foundation.`,
+		description: `This project involves developing and implementing a small-sized object detection model that can run on a mobile processor, under the supervision of Iran's National Elites Foundation.`,
 		image: od,
+		link: "https://github.com/sobhanshukueian/Object-Detectives"
+	},
+	{
+		name: "Iris Identification",
+		description: `I implemented an identification system for the iris dataset using edge detection and the Hough transform. To improve the efficiency of the Hough transform algorithm, I utilized Numpy broadcasting and vectorizing techniques, along with some modifications. Additionally, I employed Daugman normalization for better results. For the final identification step, I utilized a Siamese network with contrastive loss.`,
+		image: iris,
+		link: "https://github.com/sobhanshukueian/Iris-Identification",
+
 	},
 	{
 		name: "Style Transfer",
-		description: `Neural Style Transfer is a technique that allows us to generate an image with the same "content" as a base image, but with the "style" of our chosen picture.`,
+		description: `Implementeation of a Neural Style Transfer project, which is a technique to generate an image that has the same "content" as a base image, but with the "style" of a chosen picture.`,
 		image: style_transfer,
 		link: "https://github.com/sobhanshukueian/Style-Transfer",
 	},

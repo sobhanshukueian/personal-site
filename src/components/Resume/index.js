@@ -108,15 +108,18 @@ const useStyles = makeStyles((theme) => ({
 
 	},
 	subHeading: {
-		color: "#adb5bd",
+		color: "white",
 		padding: 0,
-		textTransform: "uppercase",
+		// textTransform: "uppercase",
 		fontFamily: "Sans",
+		fontSize: "1.5rem",
+
 
 	},
 	body1: {
-		color: "#6c757d",
+		color: "#adb5bd",
 		fontFamily: "Sans",
+		fontSize: "1rem",
 
 	},
 	subtitle1: {
@@ -129,56 +132,64 @@ const useStyles = makeStyles((theme) => ({
 
 const Resume = () => {
 	const classes = useStyles();
+
+	// Initialize a variable to keep track of the previous year
+	let prevYear = null;
+
 	return (
 		<>
-		<Box component="header" className={classes.mainContainer}>
-		<Particles />
+			<Box component="header" className={classes.mainContainer}>
+				<Particles />
 
-			<Typography variant="h4" align="center" className={classes.heading}>
-				Experiences
-			</Typography>
-			<Box component="div" className={classes.timeLine}>
-				{resume.map((item, index) => {
-					return (
-						<>
-							<Typography
-								variant="h2"
-								className={`${classes.timeLineYear} ${classes.timeLineItem}`}
-							>
-								{item.year}
-							</Typography>
-							<Box
-								component="div"
-								className={classes.timeLineItem}
-							>
-								<Typography
-									variant="h5"
-									align="center"
-									className={classes.subHeading}
-								>
-									{item.title}
-								</Typography>
-								<Typography
-									variant="body1"
-									align="center"
-									className={classes.body1}
-								>
-									{item.subTitle}
-								</Typography>
-								<Typography
-									variant="subtitle1"
-									align="center"
-									className={classes.subtitle1}
-								>
-									{item.desc}
-								</Typography>
-							</Box>
-						</>
-					);
-				})}
+				<Typography variant="h4" align="center" className={classes.heading}>
+					Experiences
+				</Typography>
+				<Box component="div" className={classes.timeLine}>
+					{resume.map((item, index) => {
+						// Check if the current year is the same as the previous year
+						const showYear = item.year !== prevYear;
+
+						// Update the previous year with the current year
+						prevYear = item.year;
+
+						return (
+							<>
+								{showYear && (
+									<Typography
+										variant="h2"
+										className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+									>
+										{item.year}
+									</Typography>
+								)}
+								<Box component="div" className={classes.timeLineItem}>
+									<Typography
+										variant="h5"
+										align="center"
+										className={classes.subHeading}
+									>
+										{item.title}
+									</Typography>
+									<Typography
+										variant="body1"
+										align="center"
+										className={classes.body1}
+									>
+										{item.subTitle}
+									</Typography>
+									<Typography
+										variant="subtitle1"
+										align="center"
+										className={classes.subtitle1}
+									>
+										{item.desc}
+									</Typography>
+								</Box>
+							</>
+						);
+					})}
+				</Box>
 			</Box>
-
-		</Box>
 		</>
 	);
 };

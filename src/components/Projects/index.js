@@ -17,19 +17,29 @@ const useStyles = makeStyles((theme) => ({
 		background: "#233",
 		height: "100%",
 		textDecoration: "none",
+		fontFamily: "Sans"
 	},
 	cardContainer: {
 		maxWidth: 400,
 		margin: "3rem auto",
 		textDecoration: "none",
+		fontFamily: "Sans"
+
 	},
-	txt: { textDecoration: "none" },
+	txt: {
+		textDecoration: "none",
+		fontFamily: "Sans",
+		fontWeight: "bold"
+
+	},
 	title: {
 		fontSize: theme.typography.pxToRem(36),
 		fontWeight: theme.typography.fontWeightBold,
 		margin: theme.spacing(2),
 		textAlign: "center",
 		color: "#6C757D",
+		fontFamily: "Sans"
+
 	},
 	divider: {
 		backgroundColor: "#6C757D",
@@ -42,7 +52,7 @@ const Projects = () => {
 		<Box component="div" className={classes.mainContainer}>
 			<Grid container justify="center">
 				<Grid item xs={12} md={12}>
-					<div className={classes.title}>Projects</div>
+					<div className={classes.title}>Creating Chaos and Chasing Dreams: A Tale of My Academic and Hobby Projects!</div>
 				</Grid>
 				{/* Projects */}
 				{projects.map((project, i) => (
@@ -53,11 +63,12 @@ const Projects = () => {
 									<CardMedia
 										component="img"
 										alt={project.name}
-										height="250"
+										height="300"
 										image={project.image}
+										className={classes.txt}
 									/>
 									<CardContent>
-										<Typography variant="h3" gutterBottom>
+										<Typography variant="h3" gutterBottom className={classes.txt}>
 											{project.name}
 										</Typography>
 										<Typography
@@ -76,7 +87,7 @@ const Projects = () => {
 					<Divider className={classes.divider} />
 				</Grid>
 				<Grid item xs={12} md={12}>
-					<div className={classes.title}>Small Projects</div>
+					<div className={classes.title}>Tiny Projects</div>
 				</Grid>
 				{/* Projects */}
 				{smallProjects.map((project, i) => (

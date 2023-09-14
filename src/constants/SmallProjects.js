@@ -4,6 +4,8 @@ import dog from "../images/dog.png";
 import tsp from "../images/tsp.jpg";
 import classification from "../images/classification.jpg"
 import retina from "../images/retina.png"
+import twitter from "../images/twitter.png"
+
 
 
 
@@ -20,6 +22,12 @@ const smallProjects = [
 		Adaline is a single layer neural network with multiple nodes where each node accepts multiple inputs and generates one output.The ADALINE was created by Widrow and Hoff in 1960`,
 		image: adaline,
 		link: "https://github.com/sobhanshukueian/Adaline",
+	},
+	{
+		name: "Twitter Text Classification",
+		description: `This repository contains machine learning model in Python for classifying Twitter text data.`,
+		image: twitter,
+		link: "https://github.com/sobhanshukueian/Twitter-Text-Classification-Using-ML",
 	},
 	{
 		name: "Simple-classification-using-deep-learning-on-MNIST",
